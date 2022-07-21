@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 if ! go get -u;
 then
     echo "Error: failed to execute go get -u"
