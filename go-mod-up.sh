@@ -1,5 +1,4 @@
-go get -u 2>&1
-if [ $? -ne 0 ]
+if ! go get -u 2>&1;
 then
     echo "Error: failed to execute go get -u"
     exit 1
