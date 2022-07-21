@@ -2,3 +2,7 @@
   name: "go-mod-up"
   language: script
   entry: go-mod-up.sh
+- id: go-no-replace
+  name: "go-no-replace"
+  language: script
+  entry: go-no-replace.sh
