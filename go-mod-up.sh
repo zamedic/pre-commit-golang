@@ -6,8 +6,14 @@ then
     exit 1
 fi
 
-if ! git diff --exit-code go.mod;
+if ! go mod tidy;
 then
-    echo "go.mod differs, please re-add it to your commit"
+    echo "Error: failed to execute go mod tidy"
+    exit 1
+fi
+
+if ! git diff --exit-code go.mod go.sum;
+then
+    echo "Error: go.mod and go.sum differ"
     exit 1
 fi
