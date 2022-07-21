@@ -8,6 +8,6 @@ fi
 
 if ! git diff --exit-code go.mod &> /dev/null;
 then
-    echo "go.mod or go.sum differs, please re-add it to your commit"
+    echo "go.mod differs, please re-add it to your commit"
     exit 1
 fi
