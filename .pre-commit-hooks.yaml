@@ -2,4 +2,3 @@
   name: "go-mod-up"
   language: script
   entry: go-mod-up.sh
-  files: "go.mod"
