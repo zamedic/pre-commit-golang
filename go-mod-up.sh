@@ -6,7 +6,7 @@ then
     exit 1
 fi
 
-if ! git diff --exit-code go.mod &> /dev/null;
+if ! git diff --exit-code go.mod;
 then
     echo "go.mod differs, please re-add it to your commit"
     exit 1
