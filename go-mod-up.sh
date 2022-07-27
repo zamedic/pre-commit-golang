@@ -12,8 +12,3 @@ then
     exit 1
 fi
 
-if ! git diff --exit-code go.mod go.sum;
-then
-    echo "Error: go.mod and go.sum differ"
-    exit 1
-fi
